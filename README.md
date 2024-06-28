@@ -1,5 +1,7 @@
 # HealthCast - Predictive Healthcare Analytics
 
+![healthcast_quxasp](https://github.com/ajaykumarn3000/HealthCast/assets/104309385/a51cf7f7-b54d-4bde-88df-f1bd1a2346d8)
+
 ## Overview
 
 This repository contains the implementation of a machine learning-based system for disease diagnosis prediction. The system aims to improve the accuracy and speed of disease diagnosis by leveraging patient-reported symptoms and clinical data. By integrating advanced machine learning algorithms, the system provides healthcare professionals with a valuable decision support tool for timely intervention and improved patient care.
