@@ -19,17 +19,17 @@ const Navbar = ({ page }) => {
           Home
         </Link>
         <Link
-          to="/services"
-          className={`NavLink ${page === "services" ? "active" : ""}`}
+          to="/diabetes"
+          className={`NavLink ${page === "diabetes" ? "active" : ""}`}
         >
-          Services
+          Diabetes
         </Link>
-        <Link
+        {/* <Link
           to="/about"
           className={`NavLink ${page === "about" ? "active" : ""}`}
         >
           About
-        </Link>
+        </Link> */}
         {/* <Link
           to="/contact"
           className={`NavLink ${page === "contact" ? "active" : ""}`}

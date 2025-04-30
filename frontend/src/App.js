@@ -2,13 +2,12 @@ import Navbar from "./component/Navbar";
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import About from "./component/About/About";
 import Home from "./component/Home/Home";
 import Services from "./component/Services/Services";
-// import Contact from "./component/Contact/Contact";
 import Login from "./component/Auth.js/Login";
 import Register from "./component/Auth.js/Register";
 import useUserContext from "./hooks/useUserContext";
+import Diabetes from "./component/Services/Diabetes/Diabetes";
 
 function App() {
   const [page, setPage] = React.useState("login");
@@ -22,9 +21,9 @@ function App() {
           <Route path="/" element={<Home setPage={setPage} />} />
           <Route path="/home" element={<Home setPage={setPage} />} />
           {/* Services */}
-          <Route path="/services" element={<Services setPage={setPage} />} />
+          <Route path="/diabetes" element={<Diabetes setPage={setPage} />} />
           {/* About */}
-          <Route path="/about" element={<About setPage={setPage} />} />
+          {/*<Route path="/about" element={<About setPage={setPage} />} /> */}
           {/* Contact */}
           {/* <Route path="/contact" element={<Contact setPage={setPage} />} /> */}
           {/* Auth */}

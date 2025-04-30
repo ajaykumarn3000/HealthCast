@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import InputField from "./InputField";
 import { BACKEND_URL } from "../../../setup";
 import Result from "./Result";
 
-const Diabetes = () => {
+const Diabetes = ({setPage}) => {
   const [preg, setPreg] = useState("");
   const [glucose, setGlucose] = useState("");
   const [bp, setBp] = useState("");
@@ -13,6 +13,11 @@ const Diabetes = () => {
   const [weight, setWeight] = useState("");
   const [age, setAge] = useState("");
   const [result, setResult] = useState(null);
+
+    useEffect(() => {
+      setPage("diabetes");
+    }, [setPage]);
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
